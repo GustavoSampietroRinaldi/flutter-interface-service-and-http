@@ -1,16 +1,21 @@
 # atividade_2
 
-A new Flutter project.
+ Criar Serviço com Interface + Implementação em http
+Objetivo: Trabalhar com boas práticas de injeção de dependência, abstração de serviços e consumo de API.
+Descrição:
+Criar um contrato (interface) IUserService com um método Future<List<User>> getUsers().
 
-## Getting Started
+Criar uma implementação concreta chamada UserServiceHttp, usando o pacote http.
 
-This project is a starting point for a Flutter application.
+Buscar uma lista de usuários do JSONPlaceholder.
+https://jsonplaceholder.typicode.com/users
 
-A few resources to get you started if this is your first Flutter project:
+Criar o modelo User ex: (Nao precisa adicionar os outros parametros) 	"id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Exibir essa lista na UI com Observer.
+
+Obs: os dados nao precisam ficar armazenados em lugar nenhum
